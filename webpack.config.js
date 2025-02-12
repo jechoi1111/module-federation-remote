@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ModuleFederationPlugin = require('@module-federation/enhanced/webpack').ModuleFederationPlugin
+const ModuleFederationPlugin = require('@module-federation/enhanced/webpack').ModuleFederationPlugin;
 
 module.exports = {
     mode: 'development',
@@ -27,13 +27,12 @@ module.exports = {
             './Checkbox': './src/components/Checkbox.tsx',
             './Radio': './src/components/Radio.tsx',
             './Store': './src/zustand/example/store.ts',
-            './ExamplePage': './src/pages/ExamplePage.tsx'
-
+            './ExamplePage': './src/pages/ExamplePage.tsx',
         },
         shared: {
             react: {singleton: true},
             "react-dom": {singleton: true},
-            // zustand: {singleton: true}
+            zustand: {singleton: true}
         },
     })],
     module: {

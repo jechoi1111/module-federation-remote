@@ -1,12 +1,13 @@
 import React from 'react';
 import {useExampleStore} from "../zustand/example/store";
+import {Button} from "../components/Button";
 
 const ExamplePage = () => {
-    const {bears} = useExampleStore();
+    const {bears, addBear} = useExampleStore();
     return (
         <div>
-            Example Page!!!
-            <div>bears : {bears}</div>
+            REMOTE bears : {bears} {' '}
+            <Button onClick={addBear} />
         </div>
     );
 };

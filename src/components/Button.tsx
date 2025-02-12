@@ -7,7 +7,7 @@ export type ButtonProps = {
 const Button = ({onClick}:ButtonProps) => {
     return (
         <button onClick={onClick}>
-            Click1
+            Click
         </button>
     );
 };
