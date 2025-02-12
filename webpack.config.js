@@ -26,7 +26,8 @@ module.exports = {
             './Button': './src/components/Button.tsx',
             './Checkbox': './src/components/Checkbox.tsx',
             './Radio': './src/components/Radio.tsx',
-            './Store': './src/zustand/example/store.ts'
+            './Store': './src/zustand/example/store.ts',
+            './ExamplePage': './src/pages/ExamplePage.tsx'
 
         },
         shared: {
